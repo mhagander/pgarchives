@@ -1,15 +1,6 @@
-
-function process(app, args, synchronous) {
-	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
-	file.initWithPath(app);
-	var process = Components.classes["@mozilla.org/process/util;1"].createInstance(Components.interfaces.nsIProcess);
-	process.init(file);
-	process.run(synchronous, args, args.length);
-} 
-
 function lookupMessageInPgArchives(emailAddressNode)
 {
-	messageURI = GetFirstSelectedMessage();
+	messageURI = gFolderDisplay.selectedMessageUris[0];
 	if (messageURI == null) {
 		alert('Could not find message');
 		return;
@@ -50,5 +41,5 @@ function lookupMessageInPgArchives(emailAddressNode)
 
 	msgid = msgid.replace("<","").replace(">","");
 
-	process('/etc/alternatives/x-www-browser', Array('http://archives.postgresql.org/message-id/' + msgid), false);
+	messenger.launchExternalURL('http://archives.postgresql.org/message-id/' + msgid);
 }

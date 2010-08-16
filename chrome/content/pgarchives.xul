@@ -1,9 +1,23 @@
 <?xml version="1.0"?>
 <overlay id="pgarchives" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
  <script type="application/x-javascript" src="chrome://pgarchives/content/pgarchives.js" />
+
+<!--
  <popup id="emailAddressPopup">
   <menuitem id="pgarchives-lookup" label="Lookup in PostgreSQL archives" 
     oncommand="lookupMessageInPgArchives()" accesskey="L" />
  </popup>
+-->
+
+ <popup id="mailContext">
+  <menuitem id="pgarchives-lookup" label="Lookup in PostgreSQL archives" 
+    oncommand="lookupMessageInPgArchives()" accesskey="L" />
+ </popup>
+
+ <menupopup id="menu_View_Popup">
+  <menuitem id="pgarchives-lookup" label="Lookup in PostgreSQL archives" 
+    oncommand="lookupMessageInPgArchives()" />
+ </menupopup>
+
 </overlay>
 
