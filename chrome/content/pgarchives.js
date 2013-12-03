@@ -41,5 +41,5 @@ function lookupMessageInPgArchives(emailAddressNode)
 
 	msgid = msgid.replace("<","").replace(">","");
 
-	messenger.launchExternalURL('http://archives.postgresql.org/message-id/' + msgid);
+	messenger.launchExternalURL('http://www.postgresql.org/message-id/' + msgid);
 }
