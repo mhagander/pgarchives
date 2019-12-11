@@ -1,3 +1,0 @@
-content	pgarchives	chrome/content/
-
-overlay chrome://messenger/content/messenger.xul chrome://pgarchives/content/pgarchives.xul

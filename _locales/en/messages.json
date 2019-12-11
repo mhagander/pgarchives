@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "PostgreSQL archives lookup",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Copies URL to PostgreSQL archive to clipboard.",
+    "description": "Description of the add-on."
+  },
+
+  "menuItemCopyArchiveUrl": {
+    "message": "Copy PostgreSQL archive URL",
+    "description": "Title of menu item."
+  }
+
+}
